@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20171211052354) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "nav_histories", force: :cascade do |t|
     t.integer "scheme_code"
     t.string "scheme_name"
